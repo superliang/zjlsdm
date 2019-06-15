@@ -1,0 +1,8 @@
+<view>
+  <block wx:for="{{list}}">
+    <view>{{item.company}} - {{item.warehouse}}</view>
+    <view>{{item.type}}</view>
+    <view>{{item.turenum}}</view>
+    <view>{{item.totalnum}}</view>
+  </block>
+</view>

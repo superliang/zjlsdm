@@ -1,0 +1,14 @@
+<!-- 输入稻谷合同信息页面 -->
+<view class="">
+  <view class="section">
+   <view class="section__title">普通选择器</view>
+    <picker bindchange="onbindchange" range="{{array}}" value="{{index}}">
+      <view class="picker">{{array[index]}}</view>
+    </picker>
+  </view>
+  <input placeholder="输入公司名称"></input>
+  <input placeholder="输入仓库号"></input>
+  <input placeholder="输入仓库号"></input>
+  <input placeholder="输入仓库号"></input>
+  <input placeholder="输入仓库号"></input>
+</view>
