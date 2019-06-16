@@ -1,10 +1,27 @@
+var util = require('../../utils/util.js')
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    
+    index: 0,
+    datetime:util.formatDate(new Date()),
+    warehouselist: ["中央粮库1P", "市储备库3S"],
+  },
+
+  warehousePickerAction: function (e) {
+    this.setData({
+      index: e.detail.value
+    })
+  },
+
+  timePickerAction:function(e){
+    console.log('log',e.detail.value),
+    this.setData({
+      datetime:e.detail.value
+    })
   },
 
   /**

@@ -28,7 +28,7 @@
   <input placeholder="输入每吨价格" type="number"></input>
   <view>
     <label>选择截止日期</label>
-    <picker mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
+    <picker mode="date" value="{{date}}" start="2017-01-01" end="2020-01-01" bindchange="bindDateChange">
       <view class="picker">{{date}}</view>
     </picker>
   </view>

@@ -1,18 +1,27 @@
 <view>
-<view>
-<label>输入订单号</label>
-</view>
-<view>
-<label>输入车号</label>
-</view>
-<view>
-<label>输入姓名</label>
-</view>
-<view>
-<label>输入数量</label>
-</view>
-<view>
-<label>输入时间</label>
-</view>
-
+  <view>
+    <label>选择仓库号</label>
+    <picker bindchange="warehousePickerAction" range="{{warehouselist}}" value="{{index}}">
+      <view class="picker">{{warehouselist[index]}}</view>
+    </picker>
+  </view>
+  <view>
+    <label>输入车号</label>
+    <input type="text" placeholder="输入车号"></input>
+  </view>
+  <view>
+    <label>输入姓名</label>
+    <input type="text" placeholder="输入姓名"></input>
+  </view>
+  <view>
+    <label>输入数量</label>
+    <input type="number" placeholder="输入数量"></input>
+  </view>
+  <view>
+    <label>输入时间</label>
+    <picker mode="date" value="{{datetime}}" start="2017-01-01" end="2020-09-01" bindchange="timePickerAction">
+      <view class="picker">{{datetime}}</view>
+    </picker>
+  </view>
+  <button>确定提交</button>
 </view>
