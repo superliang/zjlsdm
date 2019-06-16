@@ -1,14 +1,36 @@
 <!-- 输入稻谷合同信息页面 -->
 <view class="">
-  <view class="section">
-   <view class="section__title">普通选择器</view>
+  <view>
+    <label>选择公司</label>
     <picker bindchange="onbindchange" range="{{array}}" value="{{index}}">
       <view class="picker">{{array[index]}}</view>
     </picker>
   </view>
-  <input placeholder="输入公司名称"></input>
-  <input placeholder="输入仓库号"></input>
-  <input placeholder="输入仓库号"></input>
-  <input placeholder="输入仓库号"></input>
-  <input placeholder="输入仓库号"></input>
+  <view>
+    <label>选择仓库</label>
+    <picker bindchange="bindpickerchange" range="{{arraynums[index]}}" value="{{index1}}">
+      <view class="picker">{{arraynums[index][index1]}}</view>
+    </picker>
+  </view>
+  <view>
+    <label>选择品种</label>
+    <picker bindchange="bindchange3" range="{{array3}}" value="{{index3}}">
+      <view class="picker">{{array3[index3]}}</view>
+    </picker>
+  </view>
+  <view>
+    <label>选择年份</label>
+    <picker bindchange="bindchange4" range="{{array4}}" value="{{index4}}">
+      <view class="picker">{{array4[index4]}}</view>
+    </picker>
+  </view>
+  <input placeholder="输入数量" type="number"></input>
+  <input placeholder="输入每吨价格" type="number"></input>
+  <view>
+    <label>选择截止日期</label>
+    <picker mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
+      <view class="picker">{{date}}</view>
+    </picker>
+  </view>
+  <button>确定提交</button>
 </view>

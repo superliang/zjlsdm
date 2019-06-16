@@ -1,0 +1,24 @@
+<view>
+  <view>
+    <label>正在履约合同数：10</label>
+    <label>稻谷总数量：XXXXX(吨)</label>
+    <label>资金量：(未支付的金额)/(总的需要支付金额)《单位万元》</label>
+    <navigator url="../main-list/main-list">
+      <button>点击详情</button>
+    </navigator>
+  </view>
+  <view>
+    <label>选择公司查询</label>
+    <!-- 添加picker选择公司 -->
+    <navigator url="../main-list/main-list">
+      <button>点击查询</button>
+    </navigator>
+  </view>
+  <view>
+    <label>选择稻谷信息</label>
+    <!-- 添加picker选择稻谷品种和年份，年份为空时查询总的品种合同 -->
+    <navigator url="../main-list/main-list">
+      <button>点击查询</button>
+    </navigator>
+  </view>
+</view>

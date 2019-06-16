@@ -8,8 +8,14 @@
     </block>
   </view>
   <view class="usermotto">
-    <navigator url="../main-list/main-list"><button class="main-button">分析员</button></navigator>
-    <navigator url="../input-list/input-list"><button class="main-button">驾驶员</button></navigator>
-    <button class="main-button">管理员设置</button>
+    <navigator url="analysis-menu/analysis-menu">
+      <button class="main-button">分析员</button>
+    </navigator>
+    <navigator url="input-list/input-list">
+      <button class="main-button">驾驶员</button>
+    </navigator>
+    <navigator url="analysis-menu/analysis-menu">
+      <button class="main-button">管理员设置</button>
+    </navigator>
   </view>
 </view>

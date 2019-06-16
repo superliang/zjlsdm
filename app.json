@@ -1,9 +1,11 @@
 {
   "pages": [
-    "pages/index/index",
+    "pages/index",
     "pages/logs/logs",
     "pages/main-list/main-list",
-    "pages/input-list/input-list"
+    "pages/input-list/input-list",
+    "pages/analysis-menu/analysis-menu",
+    "pages/input-details/input-details"
   ],
   "window": {
     "backgroundTextStyle": "light",
