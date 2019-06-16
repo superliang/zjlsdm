@@ -11,11 +11,11 @@
     <navigator url="analysis-menu/analysis-menu">
       <button class="main-button">分析员</button>
     </navigator>
-    <navigator url="input-list/input-list">
+    <navigator url="input-details/input-details">
       <button class="main-button">驾驶员</button>
     </navigator>
-    <navigator url="analysis-menu/analysis-menu">
-      <button class="main-button">管理员设置</button>
+    <navigator url="input-list/input-list">
+      <button class="main-button">合同登记</button>
     </navigator>
   </view>
 </view>
